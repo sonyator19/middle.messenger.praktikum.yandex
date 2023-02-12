@@ -1,0 +1,17 @@
+<form class="form-simple">
+  <div>
+    <h3 class="form-simple__title">{{title}}</h3>
+    <div class="form-simple__wrap">
+      {{#each fields}}
+          <div class="form-simple__input-wrap">
+            <label class="form-simple__label" for="{{this.name}}">{{this.label}}</label>
+            <input type="text" class="form-simple__input form-control" id="{{this.name}}" placeholder='{{this.name}}'>
+          </div>
+      {{/each}}
+    </div>
+  </div>
+  <div class="form-simple__btns">
+      <button type="submit" class="form-simple__btn">{{btn}}</button>
+      <a class="form-simple__link">{{link}}</a>
+  </div>
+</form>

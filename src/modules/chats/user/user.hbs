@@ -1,0 +1,30 @@
+<div class="user">
+  <div class="user__header">
+    <div class="user__header-img"></div>
+    {{#unless change}}
+    <div class="user__header-name">{{name}}</div>
+    {{/unless}}
+  </div>
+
+  <div class="user__fields">
+  {{#each fields}}
+    <div class="user__row">
+      <div class="user__row-name">{{this.name}}</div>
+
+      {{#if change}}
+      <input class="user__row-content" value="{{this.content}}">
+      {{else}}
+      <div class="user__row-content">{{this.content}}</div>
+      {{/if}}
+    </div>
+  {{/each}}
+  </div>
+
+  {{#if btns}}
+  <div class="user__btns">
+    <button>Изменить данные</button>
+    <button>Изменить пароль</button>
+    <button>Выйти</button>
+  </div>
+  {{/if}}
+</div>

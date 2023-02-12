@@ -1,0 +1,26 @@
+.error {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.error__number {
+  color: #1e1e1e;
+  margin-bottom: 20px;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.error__text {
+  color: #1e1e1e;
+  margin-bottom: 70px;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.error__back {
+  color: #3369f3;
+  font-size: 11px;
+  line-height: 11px;
+}
+
+/*# sourceMappingURL=index.afedf9c5.css.map */
