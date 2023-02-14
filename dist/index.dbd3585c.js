@@ -560,8 +560,8 @@ function hmrAccept(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _formHbs = require("../../modules/chats/form/form.hbs");
 var _formHbsDefault = parcelHelpers.interopDefault(_formHbs);
-var _formCss = require("../../modules/chats/form/form.css");
-let fields = [
+var _formCss = require("../../styles/form.css");
+const fields = [
     {
         name: "login",
         label: "Логин",
@@ -587,6 +587,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
     render();
 });
 
-},{"../../modules/chats/form/form.hbs":"dsugs","../../modules/chats/form/form.css":"8nOCQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8nOCQ":[function() {},{}]},["s3CmQ","5dBIA"], "5dBIA", "parcelRequireab20")
+},{"../../modules/chats/form/form.hbs":"dsugs","../../styles/form.css":"e2OOD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"e2OOD":[function() {},{}]},["s3CmQ","5dBIA"], "5dBIA", "parcelRequireab20")
 
 //# sourceMappingURL=index.dbd3585c.js.map

@@ -560,7 +560,7 @@ function hmrAccept(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _errorHbs = require("../../modules/chats/error/error.hbs");
 var _errorHbsDefault = parcelHelpers.interopDefault(_errorHbs);
-var _errorCss = require("../../modules/chats/error/error.css");
+var _errorCss = require("../../styles/error.css");
 function render() {
     const html = (0, _errorHbsDefault.default)({
         number: "500",
@@ -574,6 +574,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
     render();
 });
 
-},{"../../modules/chats/error/error.hbs":"cSNBb","../../modules/chats/error/error.css":"8Lso8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8Lso8":[function() {},{}]},["8cBeS","dhKVG"], "dhKVG", "parcelRequireab20")
+},{"../../modules/chats/error/error.hbs":"cSNBb","../../styles/error.css":"kqckg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kqckg":[function() {},{}]},["8cBeS","dhKVG"], "dhKVG", "parcelRequireab20")
 
 //# sourceMappingURL=index.d521172d.js.map

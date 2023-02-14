@@ -1,0 +1,32 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto 100px;
+
+    li {    
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+}
+
+.page {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}

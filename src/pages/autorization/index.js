@@ -1,9 +1,9 @@
 import form from '../../modules/chats/form/form.hbs';
-import '../../modules/chats/form/form.css';
+import '../../styles/form.css';
 
-let fields = [
+const fields = [
 {
-    name: 'mail',
+    name: 'email',
     label: 'Почта',
     type: 'email',
     },
@@ -13,12 +13,12 @@ let fields = [
     type: 'text',
   },
   {
-    name: 'name',
+    name: 'first_name',
     label: 'Имя',
     type: 'text',
   },
   {
-    name: 'surname',
+    name: 'second_name',
     label: 'Фамилия',
     type: 'text',
   },
@@ -33,7 +33,7 @@ let fields = [
     type: 'text',
   },
   {
-    name: 'password-2',
+    name: 'password',
     label: 'Пароль (ещё раз)',
     type: 'text',
   }

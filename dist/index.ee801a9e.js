@@ -560,36 +560,42 @@ function hmrAccept(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _userHbs = require("../../modules/chats/user/user.hbs");
 var _userHbsDefault = parcelHelpers.interopDefault(_userHbs);
-var _userCss = require("../../modules/chats/user/user.css");
-let fields = [
+var _userCss = require("../../styles/user.css");
+const fields = [
     {
-        name: "Почта",
+        title: "Почта",
+        name: "email",
         content: "pochta@yandex.ru"
     },
     {
-        name: "Логин",
+        title: "Логин",
+        name: "login",
         content: "ivanivanov"
     },
     {
-        name: "Имя",
+        title: "Имя",
+        name: "first_name",
         content: "Иван"
     },
     {
-        name: "Фамилия",
+        title: "Фамилия",
+        name: "second_name",
         content: "Иванов"
     },
     {
-        name: "Имя в чате",
+        title: "Имя в чате",
+        name: "display_name",
         content: "Иван"
     },
     {
-        name: "Телефон",
+        title: "Телефон",
+        name: "phone",
         content: "+7 (909) 967 30 30"
     }
 ];
 function render() {
     const html = (0, _userHbsDefault.default)({
-        name: "Иван",
+        title: "Иван",
         fields,
         change: true
     });
@@ -600,6 +606,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
     render();
 });
 
-},{"../../modules/chats/user/user.hbs":"dBpWp","../../modules/chats/user/user.css":"chA2f","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"chA2f":[function() {},{}]},["2p1xd","ln38v"], "ln38v", "parcelRequireab20")
+},{"../../modules/chats/user/user.hbs":"dBpWp","../../styles/user.css":"e4e1V","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"e4e1V":[function() {},{}]},["2p1xd","ln38v"], "ln38v", "parcelRequireab20")
 
 //# sourceMappingURL=index.ee801a9e.js.map

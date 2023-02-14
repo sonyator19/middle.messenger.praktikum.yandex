@@ -560,8 +560,8 @@ function hmrAccept(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _mainHbs = require("./main.hbs");
 var _mainHbsDefault = parcelHelpers.interopDefault(_mainHbs);
-var _mainCss = require("./main.css");
-let dialogs = [
+var _mainCss = require("../../styles/main.css");
+const dialogs = [
     {
         img: "",
         name: "Андрей",
@@ -619,7 +619,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     render();
 });
 
-},{"./main.hbs":"7GTaX","./main.css":"ipc4D","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7GTaX":[function(require,module,exports) {
+},{"./main.hbs":"7GTaX","../../styles/main.css":"clPKd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7GTaX":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _handlebarsRuntime = require("handlebars/dist/handlebars.runtime");
@@ -641,7 +641,7 @@ const templateFunction = (0, _handlebarsRuntimeDefault.default).template({
             if (Object.prototype.hasOwnProperty.call(parent, propertyName)) return parent[propertyName];
             return undefined;
         };
-        return '<div class="main">\n    <div class="main__menu">\n        <div class="main__profile">\n            <span>Профиль</span>\n            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">\n                <path d="M1 9L5 5L1 1" stroke="#999999"/>\n            </svg>\n        </div>\n        <div class="main__search-wrap">\n            <div class="main__search">\n                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">\n                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5924 11.4138C10.1605 12.8457 7.83886 12.8457 6.40694 11.4138C4.97502 9.9819 4.97502 7.6603 6.40694 6.22837C7.83886 4.79645 10.1605 4.79645 11.5924 6.22837C13.0243 7.6603 13.0243 9.9819 11.5924 11.4138ZM12.0328 12.7968C10.0725 14.2962 7.25696 14.1495 5.46413 12.3566C3.51151 10.404 3.51151 7.23819 5.46413 5.28556C7.41675 3.33294 10.5826 3.33294 12.5352 5.28556C14.3279 7.07831 14.4747 9.89373 12.9755 11.8539L16.5423 15.4206L15.5994 16.3635L12.0328 12.7968Z" fill="#999999"/>\n                </svg>\n                <span>Поиск</span>\n            </div>\n        </div>\n        <div class="main__dialogs">\n' + ((stack1 = lookupProperty(helpers, "each").call(depth0 != null ? depth0 : container.nullContext || {}, depth0 != null ? lookupProperty(depth0, "dialogs") : depth0, {
+        return '<div class="main">\n    <div class="main__menu">\n        <div class="main__profile">\n            <span class="main__profile-text">Профиль</span>\n            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">\n                <path d="M1 9L5 5L1 1" stroke="#999999"/>\n            </svg>\n        </div>\n        <div class="main__search-wrap">\n            <div class="main__search">\n                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">\n                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5924 11.4138C10.1605 12.8457 7.83886 12.8457 6.40694 11.4138C4.97502 9.9819 4.97502 7.6603 6.40694 6.22837C7.83886 4.79645 10.1605 4.79645 11.5924 6.22837C13.0243 7.6603 13.0243 9.9819 11.5924 11.4138ZM12.0328 12.7968C10.0725 14.2962 7.25696 14.1495 5.46413 12.3566C3.51151 10.404 3.51151 7.23819 5.46413 5.28556C7.41675 3.33294 10.5826 3.33294 12.5352 5.28556C14.3279 7.07831 14.4747 9.89373 12.9755 11.8539L16.5423 15.4206L15.5994 16.3635L12.0328 12.7968Z" fill="#999999"/>\n                </svg>\n                <span class="main__search-text">Поиск</span>\n            </div>\n        </div>\n        <div class="main__dialogs">\n' + ((stack1 = lookupProperty(helpers, "each").call(depth0 != null ? depth0 : container.nullContext || {}, depth0 != null ? lookupProperty(depth0, "dialogs") : depth0, {
             "name": "each",
             "hash": {},
             "fn": container.program(1, data, 0),
@@ -657,7 +657,7 @@ const templateFunction = (0, _handlebarsRuntimeDefault.default).template({
                     "column": 21
                 }
             }
-        })) != null ? stack1 : "") + '        </div>\n    </div>\n    <div class="main__window">\n        <div>Выберите чат чтобы отправить сообщение</div>\n    </div>\n</div>  ';
+        })) != null ? stack1 : "") + '        </div>\n    </div>\n    <div class="main__window">\n        <input class="main__window-input" type="text" name="message" placeholder="Сообщение">\n    </div>\n</div>\n';
     },
     "useData": true
 });
@@ -1908,6 +1908,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"ipc4D":[function() {},{}]},["lXxn2","hT6QD"], "hT6QD", "parcelRequireab20")
+},{}],"clPKd":[function() {},{}]},["lXxn2","hT6QD"], "hT6QD", "parcelRequireab20")
 
 //# sourceMappingURL=index.02bbad0c.js.map

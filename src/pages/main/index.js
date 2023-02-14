@@ -1,7 +1,7 @@
 import main from './main.hbs';
-import './main.css';
+import '../../styles/main.css';
 
-let dialogs = [
+const dialogs = [
   {
     img: '',
     name: 'Андрей',

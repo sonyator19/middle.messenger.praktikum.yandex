@@ -560,25 +560,28 @@ function hmrAccept(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _userHbs = require("../../modules/chats/user/user.hbs");
 var _userHbsDefault = parcelHelpers.interopDefault(_userHbs);
-var _userCss = require("../../modules/chats/user/user.css");
-let fields = [
+var _userCss = require("../../styles/user.css");
+const fields = [
     {
-        name: "Старый пароль",
+        title: "Старый пароль",
+        name: "password",
         content: "•••••••••"
     },
     {
-        name: "Новый пароль",
+        title: "Новый пароль",
+        name: "password",
         content: "•••••••••••"
     },
     {
-        name: "Повторите новый пароль",
+        title: "Повторите новый пароль",
+        name: "password",
         content: "•••••••••••"
     }
 ];
 function render() {
     const html = (0, _userHbsDefault.default)({
-        fields,
-        change: true
+        change: true,
+        fields
     });
     const app = document.querySelector("#changePass");
     app.innerHTML = html;
@@ -587,6 +590,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
     render();
 });
 
-},{"../../modules/chats/user/user.hbs":"dBpWp","../../modules/chats/user/user.css":"chA2f","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"chA2f":[function() {},{}]},["icWRJ","66c3a"], "66c3a", "parcelRequireab20")
+},{"../../modules/chats/user/user.hbs":"dBpWp","../../styles/user.css":"e4e1V","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"e4e1V":[function() {},{}]},["icWRJ","66c3a"], "66c3a", "parcelRequireab20")
 
 //# sourceMappingURL=index.1b656c99.js.map

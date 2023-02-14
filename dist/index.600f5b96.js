@@ -560,30 +560,30 @@ function hmrAccept(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _userHbs = require("../../modules/chats/user/user.hbs");
 var _userHbsDefault = parcelHelpers.interopDefault(_userHbs);
-var _userCss = require("../../modules/chats/user/user.css");
-let fields = [
+var _userCss = require("../../styles/user.css");
+const fields = [
     {
-        name: "Почта",
+        title: "Почта",
         content: "pochta@yandex.ru"
     },
     {
-        name: "Логин",
+        title: "Логин",
         content: "ivanivanov"
     },
     {
-        name: "Имя",
+        title: "Имя",
         content: "Иван"
     },
     {
-        name: "Фамилия",
+        title: "Фамилия",
         content: "Иванов"
     },
     {
-        name: "Имя в чате",
+        title: "Имя в чате",
         content: "Иван"
     },
     {
-        name: "Телефон",
+        title: "Телефон",
         content: "+7 (909) 967 30 30"
     }
 ];
@@ -600,7 +600,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     render();
 });
 
-},{"../../modules/chats/user/user.hbs":"dBpWp","../../modules/chats/user/user.css":"chA2f","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dBpWp":[function(require,module,exports) {
+},{"../../modules/chats/user/user.hbs":"dBpWp","../../styles/user.css":"e4e1V","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dBpWp":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _handlebarsRuntime = require("handlebars/dist/handlebars.runtime");
@@ -632,39 +632,62 @@ const templateFunction = (0, _handlebarsRuntimeDefault.default).template({
             if (Object.prototype.hasOwnProperty.call(parent, propertyName)) return parent[propertyName];
             return undefined;
         };
-        return '    <div class="user__row">\n      <div class="user__row-name">' + container.escapeExpression(container.lambda(depth0 != null ? lookupProperty(depth0, "name") : depth0, depth0)) + "</div>\n\n" + ((stack1 = lookupProperty(helpers, "if").call(depth0 != null ? depth0 : container.nullContext || {}, depth0 != null ? lookupProperty(depth0, "change") : depth0, {
-            "name": "if",
+        return (stack1 = lookupProperty(helpers, "each").call(depth0 != null ? depth0 : container.nullContext || {}, depth0 != null ? lookupProperty(depth0, "fields") : depth0, {
+            "name": "each",
             "hash": {},
             "fn": container.program(4, data, 0),
-            "inverse": container.program(6, data, 0),
+            "inverse": container.noop,
             "data": data,
             "loc": {
                 "start": {
-                    "line": 14,
-                    "column": 6
+                    "line": 11,
+                    "column": 4
                 },
                 "end": {
-                    "line": 18,
+                    "line": 16,
                     "column": 13
                 }
             }
-        })) != null ? stack1 : "") + "    </div>\n";
+        })) != null ? stack1 : "";
     },
     "4": function(container, depth0, helpers, partials, data) {
-        var lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        var alias1 = container.lambda, alias2 = container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
             if (Object.prototype.hasOwnProperty.call(parent, propertyName)) return parent[propertyName];
             return undefined;
         };
-        return '      <input class="user__row-content" value="' + container.escapeExpression(container.lambda(depth0 != null ? lookupProperty(depth0, "content") : depth0, depth0)) + '">\n';
+        return '      <div class="user__row">\n        <div class="user__row-name">' + alias2(alias1(depth0 != null ? lookupProperty(depth0, "title") : depth0, depth0)) + '</div>\n        <div class="user__row-content">' + alias2(alias1(depth0 != null ? lookupProperty(depth0, "content") : depth0, depth0)) + "</div>\n      </div>\n";
     },
     "6": function(container, depth0, helpers, partials, data) {
-        var lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
             if (Object.prototype.hasOwnProperty.call(parent, propertyName)) return parent[propertyName];
             return undefined;
         };
-        return '      <div class="user__row-content">' + container.escapeExpression(container.lambda(depth0 != null ? lookupProperty(depth0, "content") : depth0, depth0)) + "</div>\n";
+        return (stack1 = lookupProperty(helpers, "each").call(depth0 != null ? depth0 : container.nullContext || {}, depth0 != null ? lookupProperty(depth0, "fields") : depth0, {
+            "name": "each",
+            "hash": {},
+            "fn": container.program(7, data, 0),
+            "inverse": container.noop,
+            "data": data,
+            "loc": {
+                "start": {
+                    "line": 18,
+                    "column": 4
+                },
+                "end": {
+                    "line": 23,
+                    "column": 13
+                }
+            }
+        })) != null ? stack1 : "";
     },
-    "8": function(container, depth0, helpers, partials, data) {
+    "7": function(container, depth0, helpers, partials, data) {
+        var alias1 = container.lambda, alias2 = container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+            if (Object.prototype.hasOwnProperty.call(parent, propertyName)) return parent[propertyName];
+            return undefined;
+        };
+        return '      <div class="user__row">\n        <div class="user__row-name">' + alias2(alias1(depth0 != null ? lookupProperty(depth0, "title") : depth0, depth0)) + "</div>\n        <input name=" + alias2(alias1(depth0 != null ? lookupProperty(depth0, "name") : depth0, depth0)) + ' class="user__row-content user__row-content--input" value="' + alias2(alias1(depth0 != null ? lookupProperty(depth0, "content") : depth0, depth0)) + '">\n      </div>\n';
+    },
+    "9": function(container, depth0, helpers, partials, data) {
         return '  <div class="user__btns">\n    <button>Изменить данные</button>\n    <button>Изменить пароль</button>\n    <button>Выйти</button>\n  </div>\n';
     },
     "compiler": [
@@ -692,11 +715,11 @@ const templateFunction = (0, _handlebarsRuntimeDefault.default).template({
                     "column": 15
                 }
             }
-        })) != null ? stack1 : "") + '  </div>\n\n  <div class="user__fields">\n' + ((stack1 = lookupProperty(helpers, "each").call(alias1, depth0 != null ? lookupProperty(depth0, "fields") : depth0, {
-            "name": "each",
+        })) != null ? stack1 : "") + '  </div>\n\n  <div class="user__fields">\n' + ((stack1 = lookupProperty(helpers, "unless").call(alias1, depth0 != null ? lookupProperty(depth0, "change") : depth0, {
+            "name": "unless",
             "hash": {},
             "fn": container.program(3, data, 0),
-            "inverse": container.noop,
+            "inverse": container.program(6, data, 0),
             "data": data,
             "loc": {
                 "start": {
@@ -704,23 +727,23 @@ const templateFunction = (0, _handlebarsRuntimeDefault.default).template({
                     "column": 2
                 },
                 "end": {
-                    "line": 20,
-                    "column": 11
+                    "line": 24,
+                    "column": 13
                 }
             }
-        })) != null ? stack1 : "") + "  </div>\n\n" + ((stack1 = lookupProperty(helpers, "if").call(alias1, depth0 != null ? lookupProperty(depth0, "btns") : depth0, {
+        })) != null ? stack1 : "") + "\n  </div>\n\n" + ((stack1 = lookupProperty(helpers, "if").call(alias1, depth0 != null ? lookupProperty(depth0, "btns") : depth0, {
             "name": "if",
             "hash": {},
-            "fn": container.program(8, data, 0),
+            "fn": container.program(9, data, 0),
             "inverse": container.noop,
             "data": data,
             "loc": {
                 "start": {
-                    "line": 23,
+                    "line": 28,
                     "column": 2
                 },
                 "end": {
-                    "line": 29,
+                    "line": 34,
                     "column": 9
                 }
             }
@@ -730,6 +753,6 @@ const templateFunction = (0, _handlebarsRuntimeDefault.default).template({
 });
 exports.default = templateFunction;
 
-},{"handlebars/dist/handlebars.runtime":"b7ZpO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"chA2f":[function() {},{}]},["dfP0Q","gSXyr"], "gSXyr", "parcelRequireab20")
+},{"handlebars/dist/handlebars.runtime":"b7ZpO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"e4e1V":[function() {},{}]},["dfP0Q","gSXyr"], "gSXyr", "parcelRequireab20")
 
 //# sourceMappingURL=index.600f5b96.js.map

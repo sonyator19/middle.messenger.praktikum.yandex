@@ -1,5 +1,5 @@
 import error from '../../modules/chats/error/error.hbs';
-import '../../modules/chats/error/error.css';
+import '../../styles/error.css';
 
 function render() {
     const html = error({ number: '404', text: 'Не туда попали', btn: 'Назад к чатам' });

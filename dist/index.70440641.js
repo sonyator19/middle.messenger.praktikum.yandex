@@ -560,10 +560,10 @@ function hmrAccept(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _formHbs = require("../../modules/chats/form/form.hbs");
 var _formHbsDefault = parcelHelpers.interopDefault(_formHbs);
-var _formCss = require("../../modules/chats/form/form.css");
-let fields = [
+var _formCss = require("../../styles/form.css");
+const fields = [
     {
-        name: "mail",
+        name: "email",
         label: "Почта",
         type: "email"
     },
@@ -573,12 +573,12 @@ let fields = [
         type: "text"
     },
     {
-        name: "name",
+        name: "first_name",
         label: "Имя",
         type: "text"
     },
     {
-        name: "surname",
+        name: "second_name",
         label: "Фамилия",
         type: "text"
     },
@@ -593,7 +593,7 @@ let fields = [
         type: "text"
     },
     {
-        name: "password-2",
+        name: "password",
         label: "Пароль (ещё раз)",
         type: "text"
     }
@@ -612,7 +612,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     render();
 });
 
-},{"../../modules/chats/form/form.hbs":"dsugs","../../modules/chats/form/form.css":"8nOCQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dsugs":[function(require,module,exports) {
+},{"../../modules/chats/form/form.hbs":"dsugs","../../styles/form.css":"e2OOD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dsugs":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _handlebarsRuntime = require("handlebars/dist/handlebars.runtime");
@@ -623,7 +623,7 @@ const templateFunction = (0, _handlebarsRuntimeDefault.default).template({
             if (Object.prototype.hasOwnProperty.call(parent, propertyName)) return parent[propertyName];
             return undefined;
         };
-        return '          <div class="form-simple__input-wrap">\n            <label class="form-simple__label" for="' + alias2(alias1(depth0 != null ? lookupProperty(depth0, "name") : depth0, depth0)) + '">' + alias2(alias1(depth0 != null ? lookupProperty(depth0, "label") : depth0, depth0)) + '</label>\n            <input type="text" class="form-simple__input form-control" id="' + alias2(alias1(depth0 != null ? lookupProperty(depth0, "name") : depth0, depth0)) + "\" placeholder='" + alias2(alias1(depth0 != null ? lookupProperty(depth0, "name") : depth0, depth0)) + "'>\n          </div>\n";
+        return '          <div class="form-simple__input-wrap">\n            <label class="form-simple__label" for="' + alias2(alias1(depth0 != null ? lookupProperty(depth0, "name") : depth0, depth0)) + '">' + alias2(alias1(depth0 != null ? lookupProperty(depth0, "label") : depth0, depth0)) + '</label>\n            <input type="text" class="form-simple__input form-control" id="' + alias2(alias1(depth0 != null ? lookupProperty(depth0, "name") : depth0, depth0)) + '" placeholder="' + alias2(alias1(depth0 != null ? lookupProperty(depth0, "label") : depth0, depth0)) + '" name="' + alias2(alias1(depth0 != null ? lookupProperty(depth0, "name") : depth0, depth0)) + '">\n          </div>\n';
     },
     "compiler": [
         8,
@@ -698,6 +698,6 @@ const templateFunction = (0, _handlebarsRuntimeDefault.default).template({
 });
 exports.default = templateFunction;
 
-},{"handlebars/dist/handlebars.runtime":"b7ZpO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8nOCQ":[function() {},{}]},["jwAPD","5pHeI"], "5pHeI", "parcelRequireab20")
+},{"handlebars/dist/handlebars.runtime":"b7ZpO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"e2OOD":[function() {},{}]},["jwAPD","5pHeI"], "5pHeI", "parcelRequireab20")
 
 //# sourceMappingURL=index.70440641.js.map

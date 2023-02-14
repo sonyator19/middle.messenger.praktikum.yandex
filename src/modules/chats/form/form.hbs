@@ -5,7 +5,7 @@
       {{#each fields}}
           <div class="form-simple__input-wrap">
             <label class="form-simple__label" for="{{this.name}}">{{this.label}}</label>
-            <input type="text" class="form-simple__input form-control" id="{{this.name}}" placeholder='{{this.name}}'>
+            <input type="text" class="form-simple__input form-control" id="{{this.name}}" placeholder="{{this.label}}" name="{{this.name}}">
           </div>
       {{/each}}
     </div>

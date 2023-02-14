@@ -1,0 +1,115 @@
+@import 'common.scss';
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #FBFBFB;
+    border-top: 1px solid $c-border;
+
+    &__menu {
+        width: 310px;
+        border-right: 1px solid $c-border;
+    }
+
+    &__profile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 12px;
+        line-height: 12px;
+        justify-content: end;
+        color: $c-color;
+        margin: 21px 0 23px;
+        padding-right: 10px;
+        
+        &-text {
+            padding-right: 4px;
+        }
+    }
+
+    &__search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: $c-background;
+        font-size: 12px;
+        line-height: 12px;
+        color: $c-color;
+        border-radius: 5px;
+        padding: 10px 0;
+
+        &-text {
+            padding-left: 4px;
+        }
+
+        &-wrap {
+            padding: 10px 14px;
+        }
+    }
+
+    &__dialogs {
+        display: flex;
+        flex-direction: column;
+        min-width: 290px;
+
+        &-item {
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            padding: 12px 10px;
+            border-bottom: 1px solid $c-border;
+
+            &:first-child {
+                border-top: 1px solid $c-border;
+            }
+
+            &:hover {
+                background: #E4EDFD;
+            }
+        }
+
+        &-img {
+            background: $c-background;
+            min-width: 47px;
+            width: 47px;
+            height: 47px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        &-name {
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 13px;
+            margin-bottom: 4px;
+        }
+
+        &-message {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            color: $c-color;
+        }
+    }
+
+    &__window {
+        margin-top: auto;
+        margin-bottom: 0;
+        width: 100%;
+        padding: 11px 60px;
+        font-size: 12px;
+        line-height: 12px;
+        color: $c-color;
+        border-top: 1px solid $c-border;
+
+        &-input {
+            background: $c-background;
+            padding: 10px 20px;
+            width: 100%;
+            border: none;
+            border-radius: 30px;
+        }
+    }
+}

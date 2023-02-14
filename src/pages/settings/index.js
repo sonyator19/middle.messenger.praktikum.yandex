@@ -1,29 +1,29 @@
 import form from '../../modules/chats/user/user.hbs';
-import '../../modules/chats/user/user.css';
+import '../../styles/user.css';
 
-let fields = [
+const fields = [
   {
-    name: 'Почта',
+    title: 'Почта',
     content: 'pochta@yandex.ru',
   },
   {
-    name: 'Логин',
+    title: 'Логин',
     content: 'ivanivanov',
   },
   {
-    name: 'Имя',
+    title: 'Имя',
     content: 'Иван',
   },
   {
-    name: 'Фамилия',
+    title: 'Фамилия',
     content: 'Иванов',
   },
   {
-    name: 'Имя в чате',
+    title: 'Имя в чате',
     content: 'Иван',
   },
   {
-    name: 'Телефон',
+    title: 'Телефон',
     content: '+7 (909) 967 30 30',
   }
 ];

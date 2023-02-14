@@ -1,5 +1,5 @@
 import error from '../../modules/chats/error/error.hbs';
-import '../../modules/chats/error/error.css';
+import '../../styles/error.css';
 
 function render() {
     const html = error({ number: '500', text: 'Мы уже фиксим', btn: 'Назад к чатам' });

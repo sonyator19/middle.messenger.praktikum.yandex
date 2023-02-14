@@ -7,17 +7,22 @@
   </div>
 
   <div class="user__fields">
-  {{#each fields}}
-    <div class="user__row">
-      <div class="user__row-name">{{this.name}}</div>
+  {{#unless change}}
+    {{#each fields}}
+      <div class="user__row">
+        <div class="user__row-name">{{this.title}}</div>
+        <div class="user__row-content">{{this.content}}</div>
+      </div>
+    {{/each}}
+  {{else}}
+    {{#each fields}}
+      <div class="user__row">
+        <div class="user__row-name">{{this.title}}</div>
+        <input name={{this.name}} class="user__row-content user__row-content--input" value="{{this.content}}">
+      </div>
+    {{/each}}
+  {{/unless}}
 
-      {{#if change}}
-      <input class="user__row-content" value="{{this.content}}">
-      {{else}}
-      <div class="user__row-content">{{this.content}}</div>
-      {{/if}}
-    </div>
-  {{/each}}
   </div>
 
   {{#if btns}}

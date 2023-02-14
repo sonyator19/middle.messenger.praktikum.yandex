@@ -299,6 +299,11 @@ input::placeholder {
   color: #999;
 }
 
+.user__row-content--input {
+  text-align: right;
+  border: none;
+}
+
 .user__btns {
   flex-direction: column;
   font-size: 13px;

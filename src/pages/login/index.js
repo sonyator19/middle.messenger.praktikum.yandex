@@ -1,7 +1,7 @@
 import form from '../../modules/chats/form/form.hbs';
-import '../../modules/chats/form/form.css';
+import '../../styles/form.css';
 
-let fields = [
+const fields = [
   {
     name: 'login',
     label: 'Логин',

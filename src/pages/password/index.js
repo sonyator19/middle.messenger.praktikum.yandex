@@ -1,23 +1,26 @@
 import form from '../../modules/chats/user/user.hbs';
-import '../../modules/chats/user/user.css';
+import '../../styles/user.css';
 
-let fields = [
+const fields = [
   {
-    name: 'Старый пароль',
+    title: 'Старый пароль',
+    name: 'password',
     content: '•••••••••',
   },
   {
-    name: 'Новый пароль',
+    title: 'Новый пароль',
+    name: 'password',
     content: '•••••••••••',
   },
   {
-    name: 'Повторите новый пароль',
+    title: 'Повторите новый пароль',
+    name: 'password',
     content: '•••••••••••',
   }
 ];
 
 function render() {
-    const html = form({ fields, change: true });
+    const html = form({ change: true, fields });
 
     const app = document.querySelector('#changePass');
     app.innerHTML = html;

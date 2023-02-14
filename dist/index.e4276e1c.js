@@ -560,7 +560,7 @@ function hmrAccept(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _errorHbs = require("../../modules/chats/error/error.hbs");
 var _errorHbsDefault = parcelHelpers.interopDefault(_errorHbs);
-var _errorCss = require("../../modules/chats/error/error.css");
+var _errorCss = require("../../styles/error.css");
 function render() {
     const html = (0, _errorHbsDefault.default)({
         number: "404",
@@ -574,7 +574,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     render();
 });
 
-},{"../../modules/chats/error/error.hbs":"cSNBb","../../modules/chats/error/error.css":"8Lso8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cSNBb":[function(require,module,exports) {
+},{"../../modules/chats/error/error.hbs":"cSNBb","../../styles/error.css":"kqckg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cSNBb":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _handlebarsRuntime = require("handlebars/dist/handlebars.runtime");
@@ -637,6 +637,6 @@ const templateFunction = (0, _handlebarsRuntimeDefault.default).template({
 });
 exports.default = templateFunction;
 
-},{"handlebars/dist/handlebars.runtime":"b7ZpO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8Lso8":[function() {},{}]},["4BUpC","3mX9L"], "3mX9L", "parcelRequireab20")
+},{"handlebars/dist/handlebars.runtime":"b7ZpO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kqckg":[function() {},{}]},["4BUpC","3mX9L"], "3mX9L", "parcelRequireab20")
 
 //# sourceMappingURL=index.e4276e1c.js.map
