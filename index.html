@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+    <script type="module" src="/index.js"></script>
+    <script type="module" src="./src/pages/main/index.js"></script>
+    <script type="module" src="./src/pages/autorization/index.js"></script>
+    <script type="module" src="./src/pages/login/index.js"></script>
+    <script type="module" src="./src/pages/404/index.js"></script>
+    <script type="module" src="./src/pages/500/index.js"></script>
+    <script type="module" src="./src/pages/settings/index.js"></script>
+    <script type="module" src="./src/pages/change/index.js"></script>
+    <script type="module" src="./src/pages/settings/index.js"></script>
+    <script type="module" src="./src/pages/password/index.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="tab" data-target="main">Главная</li>
+                <li class="tab" data-target="authorization">Авторизация</li>
+                <li class="tab" data-target="registration">Регистрация</li>
+                <li class="tab" data-target="error">404</li>
+                <li class="tab" data-target="error-page">500</li>
+                <li class="tab" data-target="profile">Профиль</li>
+                <li class="tab" data-target="change">Настройки</li>
+                <li class="tab" data-target="changePass">Пароль</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>   
+        <div class="page active" id="main"></div>
+        <div class="page" id="authorization"></div>
+        <div class="page" id="registration"></div>
+        <div class="page" id="error"></div>
+        <div class="page" id="error-page"></div>
+        <div class="page" id="profile"></div>
+        <div class="page" id="change"></div>
+        <div class="page" id="changePass"></div>
+    </main>
+</body>
+</html>
