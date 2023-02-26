@@ -1,0 +1,26 @@
+@import 'common.scss';
+
+.error {
+    margin: 0 auto;
+    text-align: center;
+    
+    &__number {
+        font-size: 40px;
+        line-height: 40px;
+        color: $c-dark;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: 20px;
+        color: $c-dark;
+        margin-bottom: 70px;
+    }
+
+    &__back {
+        font-size: 11px;
+        line-height: 11px;
+        color: $c-brand;
+    }
+}
