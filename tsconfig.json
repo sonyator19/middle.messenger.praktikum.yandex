@@ -1,12 +1,12 @@
 {
     "compilerOptions": {
-        "target": "es2016",
+        "outDir": "dist",
+        "declaration": false,
         "module": "commonjs",
-        "rootDir": "./src",
         "noImplicitAny": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "strictNullChecks": true,
         "sourceMap": true,
+        "strictNullChecks": true
     }
 }
