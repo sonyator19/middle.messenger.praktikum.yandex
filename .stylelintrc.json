@@ -1,21 +1,7 @@
 {
     "extends": "stylelint-config-standard",
     "rules": {
-      "color-hex-case": "lower"
-    },
-    "ignoreFiles": [
-      "dist/*"
-    ],
-    "overrides": [
-      {
-        "files": ["*.scss", "**/*.scss"],
-        "customSyntax": "postcss-scss"
-      },
-      {
-        "files": ["**/*.css", "modules/chats/**/*.css"],
-        "rules": {
-          "alpha-value-notation": "percentage"
-        }
-      }
-    ]
+      "no-descending-specificity": null,
+      "selector-class-pattern": null
+    }
   } 
