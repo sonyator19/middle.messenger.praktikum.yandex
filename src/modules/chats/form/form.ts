@@ -80,8 +80,10 @@ export class Form extends Block {
     const fields = props.fields.map((field: any) => {
       const fieldProps = {
         ...field,
-        onFocus: onFocus ? () => onFocus(field.name) : null,
-        onBlur: onBlur ? () => onBlur(field.name) : null,
+        events: {
+          onFocus: onFocus ? () => onFocus(field.name) : null,
+          onBlur: onBlur ? () => onBlur(field.name) : null,
+        }
       };
       delete fieldProps.error;
       return fieldProps;

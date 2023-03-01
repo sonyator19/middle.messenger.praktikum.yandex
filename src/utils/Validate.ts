@@ -30,6 +30,7 @@ export const validate = (rules: validation[]) => {
                 } else if (!phoneRegexp.test(value)) {
                     errorMessage[name] = 'Некорректный номер телефона';
                 }
+
                 break;
             
             case validateField.email:
@@ -40,6 +41,7 @@ export const validate = (rules: validation[]) => {
                 } else if (!emailRegexp.test(value)) {
                     errorMessage[name] = 'Некорректный email';
                 }
+
                 break;
         }
     }
