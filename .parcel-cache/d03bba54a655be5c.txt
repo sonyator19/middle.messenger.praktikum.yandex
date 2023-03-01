@@ -7423,7 +7423,7 @@
 133/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/es-abstract/2022/AdvanceStringIndex.js1677693582679194495 0
 124/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/css-select/lib/procedure.d.ts1677693573071157458 0
 136/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/es-abstract/2022/IsUnsignedElementType.js1677693606179284392 0
-97/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.html1677695318964817596 0
+97/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.html1677696079707106199 0
 111/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/espree/README.md1677693551251072718 0
 149/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/stylelint/lib/rules/media-feature-name-disallowed-list1677693606387285183 1
 125/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/argparse/lib/help/formatter.js1677693572371154753 0
@@ -8381,7 +8381,7 @@
 109/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/ts-node/node161677693580519186182 1
 133/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/string.prototype.trimstart/polyfill.js1677693525246970557 0
 146/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@csstools/css-tokenizer/dist/consume/url-token.d.ts1677693578535178540 0
-104/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.a31e44f6.js1677694747599043384 0
+104/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.a31e44f6.js1677696079847106617 0
 148/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/tsconfig-paths/src/__tests__/match-path-async.test.ts1677693577455174377 0
 143/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@jridgewell/trace-mapping/dist/trace-mapping.mjs1677693567583136229 0
 164/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/table/node_modules/ajv/dist/vocabularies/applicator/dependencies.d.ts1677693601527266671 0
@@ -8577,7 +8577,7 @@
 105/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/src/pages/main/index.ts1677041361606779130 0
 146/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/caniuse-lite/data/features/contentsecuritypolicy.js1677693589691221419 0
 143/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/es-abstract/2019/AbstractRelationalComparison.js1677693577995176459 0
-104/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.2e5cdcd2.js1677694747599043384 0
+104/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.2e5cdcd2.js1677696079847106617 0
 156/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/normalize-package-data/node_modules/semver/ranges/simplify.js1677693581063188277 0
 123/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/node-releases/data/processed1677693526942977261 1
 114/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/yallist/iterator.js1677693519070946100 0
@@ -9604,7 +9604,7 @@
 123/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@types/node/async_hooks.d.ts1677693553751082473 0
 121/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/jsx-ast-utils/src/index.js1677693578463178262 0
 141/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/handlebars/dist/amd/handlebars/compiler/ast.js1677693540715031482 0
-104/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.ae2d56d7.js1677694747599043384 0
+104/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.ae2d56d7.js1677696079847106617 0
 127/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/table/dist/src/types/internal.js1677693539507026742 0
 184/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@typescript-eslint/typescript-estree/_ts3.4/dist/create-program/createDefaultProgram.d.ts1677693589259219764 0
 132/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@parcel/source-map/dist/utils.js.flow1677693555683090003 0
@@ -9835,7 +9835,7 @@
 153/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/static-extend/node_modules/is-data-descriptor/package.json1677693560923110390 0
 130/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/es-abstract/2022/GetGlobalObject.js1677693601823267801 0
 157/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/abortcontroller-polyfill/dist/abortcontroller-polyfill-only.js1677693551527073795 0
-104/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.8e9bd240.js1677694798375205046 0
+104/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.8e9bd240.js1677696079843106605 0
 156/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@typescript-eslint/scope-manager/dist/lib/es2021.weakref.d.ts1677693602799271520 0
 129/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/remarkable/lib/rules_core/block.js1677693581643190510 0
 111/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/is-set/.eslintrc1677693530434991045 0
@@ -9908,7 +9908,7 @@
 132/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/typescript/lib/lib.es2020.string.d.ts1677693613471312094 0
 105/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/yaml/types1677693577715175379 1
 124/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/eslint/lib/rules/no-caller.js1677693597587251634 0
-104/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.7ca65674.js1677694747599043384 0
+104/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.7ca65674.js1677696079847106617 0
 117/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/is-regex/test/index.js1677693534199005878 0
 128/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/highlight.js/lib/languages/nix.js1677693596299246714 0
 129/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/es-abstract/2016/ArraySetLength.js1677693584247200523 0
@@ -10018,7 +10018,7 @@
 143/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/htmlnano/lib/modules/normalizeAttributeValues.js1677693557471096966 0
 156/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@typescript-eslint/utils/dist/ts-eslint-scope/Referencer.d.ts1677693596599247860 0
 93/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/.sass-cache1676050428966307172 1
-108/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.30a38545.js.map1677694747627043474 0
+108/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.30a38545.js.map1677696079883106724 0
 123/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/es-abstract/2018/MakeTime.js1677693607079287816 0
 131/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/es-abstract/2022/BigInt/leftShift.js1677693606847286933 0
 127/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/cosmiconfig/dist/ExplorerSync.js1677693544971048165 0
@@ -10104,7 +10104,7 @@
 141/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/caniuse-lite/data/features/addeventlistener.js1677693552843078932 0
 129/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/highlight.js/lib/languages/rust.js1677693597959253056 0
 136/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/eslint/lib/rules/no-restricted-globals.js1677693601667267205 0
-108/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.3394f2d6.js.map1677694747627043474 0
+108/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.3394f2d6.js.map1677696079883106724 0
 114/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/moment/locale/ca.js1677693582451193617 0
 137/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@swc/helpers/lib/_await_async_generator.js1677693557287096248 0
 124/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/cosmiconfig/dist/types.js.map1677693566707132834 0
@@ -10201,7 +10201,7 @@
 147/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/axobject-query/lib/etc/objects/MenuListOptionRole.js1677693582171192541 0
 144/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@typescript-eslint/types/dist/parser-options.d.ts1677693577999176475 0
 145/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/table/node_modules/ajv/dist/vocabularies/draft7.js1677693579115180775 0
-104/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.5e7b7240.js1677694747599043384 0
+104/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.5e7b7240.js1677696079843106605 0
 109/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/arg/index.d.ts1677693545767051281 0
 146/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/aria-query/lib/etc/roles/literal/superscriptRole.js1677693590211223412 0
 113/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/path-type/index.js1677693525326970873 0
@@ -10350,7 +10350,7 @@
 146/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/typescript/lib/it/diagnosticMessages.generated.json1677693612647308970 0
 107/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/doctrine/lib1677693552051075840 1
 148/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/eslint-plugin-jsx-a11y/lib/rules/media-has-caption.js1677693590855225881 0
-108/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.ae2d56d7.js.map1677694747627043474 0
+108/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.ae2d56d7.js.map1677696079883106724 0
 143/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/highlight.js/styles/atelier-sulphurpool-dark.css1677693559199103688 0
 129/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/caniuse-lite/data/features/apng.js1677693573375158632 0
 123/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/css-select/lib/attributes.js1677693545699051014 0
@@ -10561,7 +10561,7 @@
 141/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/caniuse-lite/data/features/css-writing-mode.js1677693597055249603 0
 129/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/jsx-ast-utils/lib/eventHandlers.js1677693556971095020 0
 118/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/content-type/HISTORY.md1677693544307045564 0
-105/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.4ee4707b.css1677694747599043384 0
+105/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.4ee4707b.css1677696079703106187 0
 162/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@typescript-eslint/scope-manager/dist/referencer/Reference.d.ts.map1677693600499262751 0
 111/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/js-sdsl/dist/esm1677693586551209373 1
 133/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/es-abstract/2018/CreateDataProperty.js1677693594607240245 0
@@ -10616,7 +10616,7 @@
 127/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/terser/lib/compress/inference.js1677693586771210217 0
 120/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/eslint-plugin-import/docs1677693589159219380 1
 125/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/imurmurhash/imurmurhash.min.js1677693532775000270 0
-104/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.30a38545.js1677694747599043384 0
+104/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.30a38545.js1677696079847106617 0
 127/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/eslint/lib/rules/no-dupe-args.js1677693598515255179 0
 124/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@jridgewell/set-array/LICENSE1677693555775090362 0
 166/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@typescript-eslint/utils/node_modules/eslint-scope/lib/scope-manager.js1677693574719163822 0
@@ -10630,7 +10630,7 @@
 131/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/es-abstract/2019/IsDataDescriptor.js1677693604491277966 0
 143/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/abortcontroller-polyfill/dist/abortcontroller.js1677693553739082425 0
 132/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/mixin-deep/node_modules/is-extendable1677693565379127687 1
-104/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.3394f2d6.js1677694747599043384 0
+104/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.3394f2d6.js1677696079847106617 0
 125/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/svgo/plugins/preset-default.js1677693570319146820 0
 119/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/es-to-primitive/index.js1677693549751066860 0
 128/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/es-abstract/2021/BigInt/divide.js1677693600119261301 0
@@ -10685,7 +10685,7 @@
 125/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/remarkable/lib/parser_block.js1677693563203119245 0
 151/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@parcel/utils/test/input/sourcemap/referenced-min.js.map1677693597875252735 0
 147/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/eslint/lib/linter/code-path-analysis/fork-context.js1677693589455220515 0
-108/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.a364b8e7.js.map1677694747627043474 0
+108/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.a364b8e7.js.map1677696079883106724 0
 108/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.a50cf6ab.js.map1677695319012817742 0
 127/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/resolve/test/resolver/false_main1677693590143223152 1
 164/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@typescript-eslint/type-utils/_ts3.4/dist/containsAllTypesByName.d.ts1677693578991180297 0
@@ -10723,13 +10723,13 @@
 112/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/typescript/lib/ru1677693612751309364 1
 151/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@parcel/package-manager/test/fixtures/empty/package.json1677693584431201230 0
 109/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/for-in/LICENSE1677693536447014721 0
-108/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.2e5cdcd2.js.map1677694747627043474 0
+108/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.2e5cdcd2.js.map1677696079883106724 0
 125/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/source-map-support/register.js1677693528382982949 0
 116/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/colord/plugins/xyz.js1677693552723078463 0
 120/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/es-abstract/.editorconfig1677693538663023429 0
 104/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.d521172d.js1676527065511375579 0
 140/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/handlebars/dist/amd/handlebars/helpers/log.js1677693595631244160 0
-104/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.a364b8e7.js1677694747599043384 0
+104/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.a364b8e7.js1677696079843106605 0
 120/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@parcel/core/lib/index.js1677693589891222186 0
 132/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@nodelib/fs.walk/out/types/index.d.ts1677693573427158833 0
 156/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/expand-brackets/node_modules/is-accessor-descriptor/README.md1677693566447131827 0
@@ -10968,7 +10968,7 @@
 143/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/eslint-plugin-react/node_modules/resolve/.github1677693595459243503 1
 130/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@humanwhocodes/module-importer/dist1677693564799125437 1
 139/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/resolve/test/resolver/malformed_package_json1677693590331223872 1
-94/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/netlify.toml1676527065519377801 0
+94/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/netlify.toml1677696619988716344 0
 148/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/eslint-plugin-import/node_modules/semver/CHANGELOG.md1677693572227154197 0
 125/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/es-abstract/helpers/forEach.js1677693601419266259 0
 101/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/semver1677693526858976929 1
@@ -11203,7 +11203,7 @@
 137/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/es-abstract/2022/OrdinarySetPrototypeOf.js1677693607851290752 0
 122/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/ajv/scripts/compile-dots.js1677693580011184227 0
 163/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@babel/runtime/helpers/esm/classCheckPrivateStaticFieldDescriptor.js1677693584347200907 0
-108/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.a31e44f6.js.map1677694747627043474 0
+108/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.a31e44f6.js.map1677696079883106724 0
 118/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/braces/lib/stringify.js1677693554323084703 0
 137/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/highlight.js/lib/languages/actionscript.js1677693584315200784 0
 117/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/array-includes/shim.js1677693552851078962 0
@@ -11566,7 +11566,7 @@
 145/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/handlebars/dist/cjs/handlebars/compiler/visitor.js1677693599011257072 0
 164/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@typescript-eslint/eslint-plugin/node_modules/semver/functions/cmp.js1677693571563151630 0
 136/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/eslint/lib/rules/no-restricted-modules.js1677693601759267556 0
-86/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist1677695319020817766 1
+86/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist1677696079891106749 1
 114/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/deep-is/.travis.yml1677693548443061748 0
 134/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/table/node_modules/ajv/dist/2019.js.map1677693595627244145 0
 132/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/es-abstract/2020/RawBytesToNumeric.js1677693607939291087 0
@@ -11895,7 +11895,7 @@
 140/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@parcel/bundler-default/lib/DefaultBundler.js1677693558991102878 0
 127/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/es-abstract/2018/HourFromTime.js1677693603143272830 0
 129/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/diff/lib/util/distance-iterator.js1677693564623124754 0
-108/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.8e9bd240.js.map1677694798391205096 0
+108/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.8e9bd240.js.map1677696079879106712 0
 130/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/es-abstract/2016/QuoteJSONString.js1677693607907290965 0
 157/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@typescript-eslint/eslint-plugin/dist/rules/no-extra-parens.js1677693587575213304 0
 133/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/es-abstract/2017/InstanceofOperator.js1677693603515274247 0
@@ -12499,7 +12499,7 @@
 125/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/moment/src/lib/utils/to-int.js1677693606699286370 0
 135/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/highlight.js/lib/languages/autohotkey.js1677693586295208390 0
 115/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/accepts/package.json1677693549203064719 0
-109/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.4ee4707b.css.map1677694747627043474 0
+109/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.4ee4707b.css.map1677696079727106259 0
 146/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/table/node_modules/ajv/lib/compile/codegen/index.ts1677693602659270986 0
 113/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/globjoin/README.md1677693533643003688 0
 122/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/domelementtype/package.json1677693545663050873 0
@@ -13113,7 +13113,7 @@
 127/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/js-yaml/lib/js-yaml/exception.js1677693544743047272 0
 115/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/lmdb/dependencies/v81677693593823237244 1
 128/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/highlight.js/lib/languages/cal.js1677693587303212260 0
-106/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/avatar.02f9bbc6.png1677694747599043384 0
+106/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/avatar.02f9bbc6.png1677696079815106522 0
 140/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/eslint-plugin-import/lib/rules/no-commonjs.js1677693577471174439 0
 129/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@parcel/logger/test/Logger.test.js1677693557955098848 0
 151/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@typescript-eslint/scope-manager/dist/scope/WithScope.js1677693590019222676 0
@@ -17644,7 +17644,7 @@
 115/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/iconv-lite/encodings1677693568143138398 1
 119/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/language-subtag-registry1677693583307196909 1
 129/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/iconv-lite/encodings/dbcs-codec.js1677693536367014405 0
-108/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.7ca65674.js.map1677694747627043474 0
+108/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.7ca65674.js.map1677696079883106724 0
 140/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/es-abstract/2021/CreateDataPropertyOrThrow.js1677693595603244053 0
 128/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/iconv-lite/encodings/dbcs-data.js1677693538579023099 0
 112/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/kind-of/README.md1677693530930993002 0
@@ -18872,7 +18872,7 @@
 149/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@eslint/eslintrc/node_modules/js-yaml/lib/exception.js1677693575535166972 0
 146/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@parcel/workers/test/integration/workerfarm/echo.js1677693565227127097 0
 136/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/table/node_modules/ajv/lib/refs/data.json1677693592979234014 0
-108/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.5e7b7240.js.map1677694747627043474 0
+108/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/dist/index.5e7b7240.js.map1677696079879106712 0
 144/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@parcel/core/test/fixtures/custom-format-mismatch1677693599467258813 1
 129/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@parcel/workers/test/workerfarm.js1677693580883187584 0
 121/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@parcel/workers/index.d.ts1677693581239188954 0
@@ -19439,7 +19439,7 @@
 147/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/eslint-plugin-jsx-a11y/node_modules/semver/README.md1677693572999157180 0
 140/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/postcss-media-query-parser/dist/nodes/Node.js1677693529254986390 0
 117/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/yocto-queue/index.d.ts1677693518022941943 0
-113/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/src/modules/chats/form/form.hbs1677691072165596387 0
+113/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/src/modules/chats/form/form.hbs1677697370308692407 0
 116/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/yocto-queue/readme.md1677693517562940116 0
 136/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/@lmdb/lmdb-linux-x64/node.abi93.musl.node1677693597995253193 0
 116/home/sonytor/Рабочий стол/messenger/middle.messenger.praktikum.yandex/node_modules/moment/src/lib/moment1677693606963287375 1
