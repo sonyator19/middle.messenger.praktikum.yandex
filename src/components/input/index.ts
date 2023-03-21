@@ -1,19 +1,35 @@
 import Block from '../../utils/Block';
 import template from './input.hbs';
-import '../../chats/form/form.css';
+import '../../modules/chats/form/form.css';
 
-interface InputProps {
+export interface InputProps {
   type: string;
   value: string;
   name: string;
   label: string;
-  onFocus: (e?: InputEvent) => unknown;
-  onBlur: (e?: InputEvent) => unknown;
+  onFocus: (e?: Event) => void;
+  onBlur: (e?: Event) => void;
+  id?: string;
 }
 
 export class Input extends Block {
-  constructor(props: InputProps) {
-    super('input', props);
+  constructor({
+    type = 'text',
+    name = '',
+    value = '',
+    label = '',
+    onFocus = () => {},
+    onBlur = () => {},
+    id = ''
+  }: InputProps) {
+    super('input', {
+      type,
+      name,
+      value,
+      label,
+      events: { focus: onFocus, blur: onBlur },
+      id
+    });
   }
 
   render() {

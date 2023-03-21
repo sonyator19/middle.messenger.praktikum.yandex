@@ -9,15 +9,16 @@ type BlockProps = {
 };
 
 
-class Block {
+abstract class Block<Props extends Record<string, any> = unknown> {
   static EVENTS = {
     INIT: "init",
     FLOW_CDM: "flow:component-did-mount",
     FLOW_CDU: "flow:component-did-update",
     FLOW_RENDER: "flow:render"
-  };
+  } as const;
 
   protected props: BlockProps;
+  protected events: any;
   public id = nanoid(6);
   public children: Record<string, Block>;
   private eventBus: () => EventBus;
@@ -117,6 +118,12 @@ class Block {
     return true;
   }
 
+  // _removeEvents() {
+  //   Object.keys(this.events).forEach((eventName) => {
+  //     this._element!.removeEventListener(eventName, this.events[eventName]);
+  //   });
+  // }
+
   setProps = (nextProps: Partial<BlockProps>) => {
     if (!nextProps) {
       return;
@@ -132,9 +139,10 @@ class Block {
   private _render() {
     const fragment = this.render();
 
+    // this._removeEvents();
     this._element!.innerHTML = '';
 
-    this._element!.append(fragment);
+    this._element!.appendChild(fragment);
 
     this._addEvents();
   }

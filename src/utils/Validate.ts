@@ -4,12 +4,12 @@ export enum validateField {
     email = 'email'
 }
   
-export type validation = {
+export type Validation = {
     name: string;
     value: string;
 };
   
-export const validate = (rules: validation[]) => {
+export const Validate = (rules: Validation[]) => {
     const errorMessage: Record<string, string> = {};
 
     for (let i = 0; i < rules.length; i += 1) {

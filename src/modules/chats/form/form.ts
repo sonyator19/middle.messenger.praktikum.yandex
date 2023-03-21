@@ -1,14 +1,15 @@
 import Block from '../../../utils/Block';
 import form from '../../chats/form/form.hbs';
+import { Input, InputProps } from '../../../components/input/index';
 import '../../chats/form/form.css';
-import { validate, validation } from '../../../utils/Validate';
+import { Validate, Validation } from '../../../utils/Validate';
 
 interface FormProps {
     title: string;
-    fields: Array<{name: string, label: string, type: string}>;
+    fields: InputProps[];
     btn: string;
     link: string;
-    events?: any;
+    events?: Record<string, (e?: Event) => unknown>;
   }
   
 export class Form extends Block {
@@ -20,7 +21,7 @@ export class Form extends Block {
           e.preventDefault();
 
           const submittedData = {} as any;
-          const fieldValues: validation[] = [];
+          const fieldValues: Validation[] = [];
           const formData = new FormData(e.target as HTMLFormElement);
 
           formData.forEach((value, key) => {
@@ -28,7 +29,7 @@ export class Form extends Block {
             submittedData[key] = value;
           });
 
-          const errorsObj = validate(fieldValues);
+          const errorsObj = Validate(fieldValues);
 
           if (Object.keys(errorsObj).length > 0) {
             Object.keys(errorsObj).forEach((key) => {
@@ -48,50 +49,32 @@ export class Form extends Block {
     });
   };
 
-  onFocus(name: string) {
-    const fieldIndex = this.props.fields.findIndex((field:any) => field.name === name);
-    if (fieldIndex >= 0) {
-      const fieldValue = this.props.fields[fieldIndex].value || '';
-      const errorsObj = validate([{ name, value: fieldValue }]);
-
-      if (errorsObj[name]) {
-        this.props.fields[fieldIndex].error = errorsObj[name];
-        this.children[fieldIndex].setProps({ error: errorsObj[name] });
-      }
-    }
-  }
-
-  onBlur(name: string) {
-    if (this.children[name]) {
-      const fieldValue = this.props.fields.find((field:any) => field.name === name)?.value || '';
-      const errorsObj = validate([{ name, value: fieldValue }]);
-
-      if (Object.keys(errorsObj).length > 0) {
-        this.children[name].children.error.setProps({ text: errorsObj[name] });
-      } else {
-        this.children[name].children.error.setProps({ text: '' });
-      }
-    }
+  appendChild(child: Block) {
+    //@ts-ignore
+    this.getContent().appendChild(child.getContent());
   }
 
   render() {
-    const { onFocus, onBlur, ...props } = this.props;
+    const { ...props } = this.props;
 
-    const fields = props.fields.map((field: any) => {
-      const fieldProps = {
-        ...field,
+    const inputs = props.fields.map((field: any) => {
+      const input = new Input(field);
+  
+      input.setProps({
         events: {
-          onFocus: onFocus ? () => onFocus(field.name) : null,
-          onBlur: onBlur ? () => onBlur(field.name) : null,
-        }
-      };
-      delete fieldProps.error;
-      return fieldProps;
+          focus: () => field.onFocus(field.name),
+          blur: () => field.onBlur(field.name),
+        },
+      });
+  
+      this.appendChild(input);
+  
+      return input;
     });
 
     return this.compile(form, {
       ...props,
-      fields,
+      inputs
     });
   }
 }
