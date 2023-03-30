@@ -22,38 +22,10 @@ if (tabs) {
     })
 }
 
-import { HomePage } from './src/pages/home';
-import { Form } from './src/modules/chats/form/form';
 import { User } from './src/modules/chats/user/user';
-import { registrationData, authorizationData, profileData } from './static/data/data';
-import { Input, InputProps } from './src/components/input/index';
+import { profileData } from './static/data/data';
 
 window.addEventListener('DOMContentLoaded', () => {
-//   const root = document.querySelector('#app')!;
-//   const homePage = new HomePage({ title: 'Home page' });
-//   root.append(homePage.getContent()!);
-//   homePage.dispatchComponentDidMount();
-
-    const root = document.querySelector('#registration')!;
-    const registrationPage = new Form({ 
-        title: 'Регистрация', 
-        fields: registrationData, 
-        btn: 'Зарегистрироваться', 
-        link: 'Войти' 
-    });
-    root.append(registrationPage.getContent()!);
-    registrationPage.dispatchComponentDidMount();
-
-    const auth = document.querySelector('#authorization')!;
-    const authorizationPage = new Form({ 
-        title: 'Вход', 
-        fields: authorizationData, 
-        btn: 'Авторизоваться', 
-        link: 'Нет аккаунта?',
-    });
-    auth.append(authorizationPage.getContent()!);
-    authorizationPage.dispatchComponentDidMount();
-
     const profile = document.querySelector('#profile')!;
     const profilePage = new User({ 
         name: 'Иван', 

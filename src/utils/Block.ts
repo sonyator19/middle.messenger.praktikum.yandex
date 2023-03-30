@@ -105,10 +105,11 @@ abstract class Block<Props extends Record<string, any> = unknown> {
   public dispatchComponentDidMount() {
     this.eventBus().emit(Block.EVENTS.FLOW_CDM);
 
-    Object.values(this.children).forEach(child => child.dispatchComponentDidMount());
+    Object.values(this.children).forEach(child => 
+      child.dispatchComponentDidMount());
   }
 
-  private _componentDidUpdate(oldProps: any, newProps: any) {
+  _componentDidUpdate(oldProps: any, newProps: any) {
     if (this.componentDidUpdate(oldProps, newProps)) {
       this.eventBus().emit(Block.EVENTS.FLOW_RENDER);
     }
@@ -137,9 +138,9 @@ abstract class Block<Props extends Record<string, any> = unknown> {
   }
 
   private _render() {
+    // this._removeEvents();
     const fragment = this.render();
 
-    // this._removeEvents();
     this._element!.innerHTML = '';
 
     this._element!.appendChild(fragment);

@@ -4,31 +4,32 @@ import '../../modules/chats/form/form.css';
 
 export interface InputProps {
   type: string;
-  value: string;
+  value?: string;
   name: string;
   label: string;
-  onFocus: (e?: Event) => void;
-  onBlur: (e?: Event) => void;
+  events?: any;
+  onFocus?: (e?: Event) => unknown;
+  onBlur?: (e?: Event) => unknown;
   id?: string;
 }
 
-export class Input extends Block {
+export class Input extends Block<InputProps> {
   constructor({
     type = 'text',
     name = '',
     value = '',
     label = '',
+    id = '',
     onFocus = () => {},
     onBlur = () => {},
-    id = ''
   }: InputProps) {
-    super('input', {
+    super('div', {
       type,
       name,
       value,
       label,
-      events: { focus: onFocus, blur: onBlur },
-      id
+      id,
+      events: { focus: onFocus, blur: onBlur }
     });
   }
 

@@ -1,15 +1,11 @@
-// import form from '../../modules/chats/form/form.hbs';
-// import '../../modules/chats/form/form.css';
+import { Form } from "../../modules/chats/form/form";
 
-// function render() {
-//     const html = form({ title: 'Вход', fields, btn: 'Авторизоваться', link: 'Нет аккаунта?' });
-
-//     const app = document.querySelector('#authorization');
-//     if (app) {
-//       app.innerHTML = html;
-//     }
-// }
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     render();
-// })
+const auth = document.querySelector('#authorization')!;
+const authorizationPage = new Form({ 
+    title: 'Вход', 
+    fields: 'authorization',
+    btn: 'Авторизоваться', 
+    link: 'Нет аккаунта?',
+});
+auth.append(authorizationPage.getContent()!);
+authorizationPage.dispatchComponentDidMount();
