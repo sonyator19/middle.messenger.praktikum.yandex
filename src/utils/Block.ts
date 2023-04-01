@@ -23,7 +23,7 @@ abstract class Block<Props extends Record<string, any> = unknown> {
   public children: Record<string, Block>;
   private eventBus: () => EventBus;
   private _element: HTMLElement | null = null;
-  private _meta: { tagName: string; props: BlockProps };
+  private _meta: BlockProps;
 
   /** JSDoc
    * @param {string} tagName
@@ -31,13 +31,12 @@ abstract class Block<Props extends Record<string, any> = unknown> {
    *
    * @returns {void}
    */
-  constructor(tagName = "div", propsWithChildren: BlockProps = {}) {
+  constructor(propsWithChildren: BlockProps = {}) {
     const eventBus = new EventBus();
 
     const { props, children } = this._getChildrenAndProps(propsWithChildren);
 
     this._meta = {
-      tagName,
       props
     };
 
@@ -119,11 +118,13 @@ abstract class Block<Props extends Record<string, any> = unknown> {
     return true;
   }
 
-  // _removeEvents() {
-  //   Object.keys(this.events).forEach((eventName) => {
-  //     this._element!.removeEventListener(eventName, this.events[eventName]);
-  //   });
-  // }
+  _removeEvents() {
+    const {events = {}} = this.props as { events: Record<string, () =>void> };
+
+    Object.keys(events).forEach(eventName => {
+      this._element?.removeEventListener(eventName, events[eventName]);
+    });
+  }
 
   setProps = (nextProps: Partial<BlockProps>) => {
     if (!nextProps) {
@@ -138,12 +139,14 @@ abstract class Block<Props extends Record<string, any> = unknown> {
   }
 
   private _render() {
-    // this._removeEvents();
     const fragment = this.render();
+    const newElement = fragment.firstElementChild!;
 
-    this._element!.innerHTML = '';
-
-    this._element!.appendChild(fragment);
+    if (this._element) {
+      this._removeEvents();
+      this._element.replaceWith(newElement);
+    }
+    this._element = newElement as HTMLElement;
 
     this._addEvents();
   }

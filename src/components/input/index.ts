@@ -5,6 +5,7 @@ import '../../modules/chats/form/form.css';
 export interface InputProps {
   type: string;
   value?: string;
+  error?: string;
   name: string;
   label: string;
   events?: any;
@@ -18,15 +19,17 @@ export class Input extends Block<InputProps> {
     type = 'text',
     name = '',
     value = '',
+    error = '',
     label = '',
     id = '',
     onFocus = () => {},
     onBlur = () => {},
   }: InputProps) {
-    super('div', {
+    super({
       type,
       name,
       value,
+      error,
       label,
       id,
       events: { focus: onFocus, blur: onBlur }

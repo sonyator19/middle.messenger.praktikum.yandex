@@ -3,7 +3,7 @@ import template from './input.hbs';
 import '../../modules/chats/form/form.css';
 import { Validate } from '../../utils/Validate';
 import { Input } from '../input/index';
-import { ErrorEl } from '../error/index';
+import { ErrorEl } from '../error';
 
 export interface InputProps {
   type: string;
@@ -16,13 +16,13 @@ export interface InputProps {
 
 export class InputChecked extends Block<InputProps> {
   constructor({
-    type = 'text',
+    type = '',
     name = '',
     value = '',
     label = '',
     id = ''
   }: InputProps) {
-    super('div', {
+    super({
       type,
       name,
       value,
@@ -30,36 +30,35 @@ export class InputChecked extends Block<InputProps> {
       id,
       events: {
         blur: (e: Event) => {
-          const inputEl = e.target as HTMLInputElement;        
+          const inputEl = e.target as HTMLInputElement;
           const errorsObj = Validate([
             {
-              name: this.props.name,
+              type: inputEl.type,
               value: inputEl.value,
             },
           ]);
-        
-          if (errorsObj[this.props.name]) {
-            this.children.error.setProps({ 
-              text: errorsObj[this.props.name] 
-            });
+
+          if (errorsObj[inputEl.type]) {
+            this.children.error.setProps({text: errorsObj[inputEl.type]});
+          } else {
+            this.children.error.setProps({text: ''});
           }
         },
         focus: (e: Event) => {
-          const inputEl = e.target as HTMLInputElement;        
+          const inputEl = e.target as HTMLInputElement;
           const errorsObj = Validate([
             {
-              name: this.props.name,
+              type: inputEl.type,
               value: inputEl.value,
             },
           ]);
-        
-          if (errorsObj[this.props.name]) {
-            this.children.error.setProps({ 
-              text: errorsObj[this.props.name] 
-            });
+          if (errorsObj[inputEl.type]) {
+            this.children.error.setProps({text: errorsObj[inputEl.type]});
+          } else {
+            this.children.error.setProps({text: ''});
           }
         },
-      }
+      },
     });
   }
 
@@ -72,8 +71,10 @@ export class InputChecked extends Block<InputProps> {
       onFocus: this.props.events && this.props.events.focus,
       onBlur: this.props.events && this.props.events.blur,
     });
-  
-    this.children.error = new ErrorEl();
+
+    this.children.error = new ErrorEl({
+      text: ''
+    });
   }
 
   render() {

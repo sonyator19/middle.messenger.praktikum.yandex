@@ -1,11 +1,11 @@
 export enum validateField {
     text = 'text',
-    phone = 'phone',
-    email = 'email'
+    email = 'email',
+    tel = 'tel'
 }
   
 export type Validation = {
-    name: string;
+    type: string;
     value: string;
 };
   
@@ -13,22 +13,22 @@ export const Validate = (rules: Validation[]) => {
     const errorMessage: Record<string, string> = {};
 
     for (let i = 0; i < rules.length; i += 1) {
-        const { value, name } = rules[i];
+        const { value, type } = rules[i];
 
-        switch (name) {
+        switch (type) {
             case validateField.text:
                 if (value.length === 0) {
-                    errorMessage[name] = 'Заполние поле';
+                    errorMessage[type] = 'Заполние поле';
                 }
                 break;
 
-            case validateField.phone:
+            case validateField.tel:
                 const phoneRegexp = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
 
                 if (value.length === 0) {
-                    errorMessage[name] = 'Заполние поле';
+                    errorMessage[type] = 'Заполние поле';
                 } else if (!phoneRegexp.test(value)) {
-                    errorMessage[name] = 'Некорректный номер телефона';
+                    errorMessage[type] = 'Некорректный номер телефона';
                 }
 
                 break;
@@ -37,9 +37,9 @@ export const Validate = (rules: Validation[]) => {
                 const emailRegexp = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
                 if (value.length === 0) {
-                    errorMessage[name] = 'Заполние поле';
+                    errorMessage[type] = 'Заполние поле';
                 } else if (!emailRegexp.test(value)) {
-                    errorMessage[name] = 'Некорректный email';
+                    errorMessage[type] = 'Некорректный email';
                 }
 
                 break;

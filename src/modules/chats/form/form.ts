@@ -17,7 +17,7 @@ export class Form extends Block {
   private inputs: Record<string, Input>;
 
   constructor(props: FormProps) {
-    super('div', {
+    super({
       ...props,
       events: {
         submit: (e: Event) => {
@@ -28,21 +28,14 @@ export class Form extends Block {
           const formData = new FormData(e.target as HTMLFormElement);
 
           formData.forEach((value, key) => {
-            fieldValues.push({ name: key, value: value.toString() });
+            fieldValues.push({ type: key, value: value.toString() });
             submittedData[key] = value;
           });
 
           const errorsObj = Validate(fieldValues);
 
           if (Object.keys(errorsObj).length > 0) {
-            Object.keys(errorsObj).forEach((key) => {
-              if (this.inputs[key]) {
-                this.inputs[key].children.error.setProps({
-                  text: errorsObj[key],
-                });
-              }
-            });
-            console.log('Ошибка в форме');
+            console.log('Ошибки в форме');
             return;
           }
 
@@ -93,7 +86,7 @@ export class Form extends Block {
       this.children.phone = new InputChecked({
         name: 'phone',
         label: 'Телефон',
-        type: 'phone',
+        type: 'tel',
       });
   
       this.children.password = new InputChecked({
