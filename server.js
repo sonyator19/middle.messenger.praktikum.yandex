@@ -10,4 +10,8 @@ app.get('/', (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`Запуск localhost:${PORT}`);
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> a7027fb (fix files)

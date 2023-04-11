@@ -22,6 +22,7 @@
     &__label {
         font-size: 9px;
         line-height: 9px;
+<<<<<<< HEAD
         color: $c-color;
     }
 
@@ -45,6 +46,27 @@
         color: red;
         position: absolute;
         bottom: 4px;
+=======
+        color: #999999;
+    }
+
+    &__input {
+        color: #1E1E1E;
+        font-size: 13px;
+        line-height: 13px;
+        border: none;
+        border-bottom: 1px solid #3369F3;
+        padding: 7px 0;
+
+        &-wrap {
+            display: flex;
+            flex-direction: column;
+
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+        }
+>>>>>>> a7027fb (fix files)
     }
 
     &__wrap {
@@ -60,8 +82,13 @@
     &__btn {
         border: none;
         border-radius: 8px;
+<<<<<<< HEAD
         background: $c-brand;
         color: $c-white;
+=======
+        background: #3369F3;
+        color: white;
+>>>>>>> a7027fb (fix files)
         padding: 12px 70px;
     }
 
@@ -70,10 +97,18 @@
         font-weight: 500;
         font-size: 11px;
         line-height: 11px;
+<<<<<<< HEAD
         color: $c-brand;
+=======
+        color: #3369F3;
+>>>>>>> a7027fb (fix files)
     }
 }
 
 input::placeholder {
+<<<<<<< HEAD
     color: $c-dark;
+=======
+    color: #1E1E1E;
+>>>>>>> a7027fb (fix files)
 }

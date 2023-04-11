@@ -59,10 +59,13 @@
 .user__row-content {
   color: #999999;
 }
+<<<<<<< HEAD
 .user__row-content--input {
   text-align: right;
   border: none;
 }
+=======
+>>>>>>> a7027fb (fix files)
 .user__btns {
   font-size: 13px;
   line-height: 13px;
