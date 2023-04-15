@@ -36,6 +36,14 @@ export class Input extends Block<InputProps> {
     });
   }
 
+  public getName() {
+    return (this.element as HTMLInputElement).name;
+  }
+
+  public getValue() {
+    return (this.element as HTMLInputElement).value;
+  }
+
   render() {
     return this.compile(template, this.props);
   }

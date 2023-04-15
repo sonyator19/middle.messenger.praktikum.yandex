@@ -1,37 +1,37 @@
-let menu = document.querySelector('.menu');
-let tabs;
-if (menu) {
-    tabs = menu.querySelectorAll('.tab');
-}
-let pages = document.querySelectorAll('.page');
+import Router from './src/utils/Router';
+import { LoginPage } from './src/pages/Login';
+import { SignUpPage } from './src/pages/SignUp';
+import { MessengerPage } from './src/pages/main';
 
-if (tabs) {
-    tabs.forEach((tab) => {
-        tab.addEventListener('click', () => {
-            let target = tab.getAttribute('data-target');
-    
-            pages.forEach((page) => {
-                page.classList.remove('active');
-            })
-    
-            let element = document.querySelector('#' + target);
-            if (element) {
-                element.classList.add('active');
-            }
-        })
-    })
+enum Routes {
+    Index = "/",
+    SignUp = "/sign-up",
+    Settings = "/settings",
+    Messenger = "/messenger",
+    Error = "/404",
 }
 
-import { User } from './src/modules/chats/user/user';
-import { profileData } from './static/data/data';
+window.addEventListener("DOMContentLoaded", async () => {
+    Router.use(Routes.Index, LoginPage)
+        .use(Routes.SignUp, SignUpPage)
+        // .use(Routes.Settings, SettingsPage)
+        .use(Routes.Messenger, MessengerPage)
+        // .use(Routes.Error, ErrorPage);
 
-window.addEventListener('DOMContentLoaded', () => {
-    const profile = document.querySelector('#profile')!;
-    const profilePage = new User({ 
-        name: 'Иван', 
-        fields: profileData, 
-        btns: true 
-    });
-    profile.append(profilePage.getContent()!);
-    profilePage.dispatchComponentDidMount();
+    Router.go(Routes.Index);
 });
+
+
+// import { User } from './src/modules/chats/user/user';
+// import { profileData } from './static/data/data';
+
+// window.addEventListener('DOMContentLoaded', () => {
+//     const profile = document.querySelector('#profile')!;
+//     const profilePage = new User({ 
+//         name: 'Иван', 
+//         fields: profileData, 
+//         btns: true 
+//     });
+//     profile.append(profilePage.getContent()!);
+//     profilePage.dispatchComponentDidMount();
+// });

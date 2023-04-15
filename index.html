@@ -7,42 +7,11 @@
     <title>Chat</title>
     <link rel="stylesheet" href="src/styles/style.css">
     <script type="module" src="/index.ts"></script>
-    <script type="module" src="./src/pages/main/index.ts"></script>
-    <script type="module" src="./src/pages/registration/index.ts"></script>
-    <script type="module" src="./src/pages/authorization/index.ts"></script>
-    <script type="module" src="./src/pages/404/index.ts"></script>
-    <script type="module" src="./src/pages/500/index.ts"></script>
-    <script type="module" src="./src/pages/profile/index.ts"></script>
-    <script type="module" src="./src/pages/change/index.ts"></script>
-    <script type="module" src="./src/pages/password/index.ts"></script>
 </head>
 
-<body>
-    <header>
-        <nav>
-            <ul class="menu">
-                <li class="tab" data-target="main">Главная</li>
-                <li class="tab" data-target="authorization">Авторизация</li>
-                <li class="tab" data-target="registration">Регистрация</li>
-                <li class="tab" data-target="error">404</li>
-                <li class="tab" data-target="error-page">500</li>
-                <li class="tab" data-target="profile">Профиль</li>
-                <li class="tab" data-target="change">Настройки</li>
-                <li class="tab" data-target="changePass">Пароль</li>
-            </ul>
-        </nav>
-    </header>
-    
+<body>   
     <main>
         <div id="app"></div>
-        <div class="page active" id="main"></div>
-        <div class="page" id="authorization"></div>
-        <div class="page" id="registration"></div>
-        <div class="page" id="error"></div>
-        <div class="page" id="error-page"></div>
-        <div class="page" id="profile"></div>
-        <div class="page" id="change"></div>
-        <div class="page" id="changePass"></div>
     </main>
 </body>
 </html>

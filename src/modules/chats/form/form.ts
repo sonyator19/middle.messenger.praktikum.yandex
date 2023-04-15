@@ -1,9 +1,10 @@
 import Block from '../../../utils/Block';
 import form from '../../chats/form/form.hbs';
-import { Input, InputProps } from '../../../components/input/index';
+import { Input } from '../../../components/input/index';
 import '../../chats/form/form.css';
 import { Validate, Validation } from '../../../utils/Validate';
 import { InputChecked } from '../../../components/inputChecked';
+import { Link } from '../../../components/link';
 
 interface FormProps {
   title: string;
@@ -58,7 +59,9 @@ export class Form extends Block {
         label: 'Пароль',
         type: 'text',
       });
+
     } else if (this.props.fields === 'registration') {
+
       this.children.email = new InputChecked({
         name: 'email',
         label: 'Почта',
@@ -101,6 +104,11 @@ export class Form extends Block {
         type: 'text',
       });
     }
+
+    this.children.link = new Link({
+      to: '/',
+      label: 'Нет аккаунта?',
+    });
   }
 
   render() {
