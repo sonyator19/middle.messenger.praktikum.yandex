@@ -2,6 +2,7 @@ import Block from '../../utils/Block';
 import template from './button.hbs';
 
 interface ButtonProps {
+  type?: string;
   label: string;
   events: {
     click: () => void;
@@ -10,7 +11,7 @@ interface ButtonProps {
 
 export class Button extends Block {
   constructor(props: ButtonProps) {
-    super('button', props);
+    super(props);
   }
 
   render() {

@@ -1,0 +1,29 @@
+<div>
+
+<div class="user">
+  <div class="user__header">
+    <div class="user__header-img"></div>
+    <div class="user__header-name">{{display_name}}</div>
+  </div>
+
+  <div class="user__fields">
+    {{#if default}}
+      {{{changeDataTemplte}}}
+    {{/if}}
+    {{#if passwordChange}}
+      {{{changePasswordTemplte}}}
+    {{/if}}
+    {{#if passwordChange}}
+      {{{changeDataTemplte}}}
+    {{/if}}
+  </div>
+
+  {{#if default}}
+    <div class="user__btns">
+      {{{changeDataBtn}}}
+      {{{changePasswordBtn}}}
+      {{{logOutBtn}}}
+    </div>
+  {{/if}}
+
+</div>
