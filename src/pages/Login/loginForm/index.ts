@@ -2,28 +2,30 @@ import Block from "../../../utils/Block";
 import loginForm from "./loginForm.hbs";
 import { InputChecked } from "../../../components/inputChecked";
 
-interface ChangePasswordProps {
+interface passwordProps {
   events: {
-    submit: (e: Event) => void;
+    submit: (e: unknown) => void;
   };
 }
 
-export class LoginForm extends Block<ChangePasswordProps> {
-  constructor(props: ChangePasswordProps) {
+export class LoginForm extends Block<passwordProps> {
+  constructor(props: passwordProps) {
     super(props);
   }
 
   protected init(): void {
     this.children.login = new InputChecked({
-        name: 'login',
-        label: 'Логин',
-        type: 'text',
+      label: "Логин",
+      type: "text",
+      id: "login",
+      name: "login",
     });
 
     this.children.password = new InputChecked({
-        name: 'password',
-        label: 'Пароль',
-        type: 'text',
+      label: "Пароль",
+      type: "password",
+      id: "password",
+      name: "password",
     });
   }
 

@@ -1,15 +1,13 @@
-import error from '../../modules/chats/error/error.hbs';
+import error from './error404.hbs';
 import '../../modules/chats/error/error.css';
+import Block from '../../utils/Block';
 
-function render() {
-    const html = error({ number: '404', text: 'Не туда попали', btn: 'Назад к чатам' });
+export class Error404Page extends Block {
+    constructor() {
+        super({});
+    }
 
-    const app = document.querySelector('#error');
-    if (app) {
-        app.innerHTML = html;
+    render() {
+        return this.compile(error, { ...this.props});
     }
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    render();
-})

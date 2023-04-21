@@ -8,6 +8,7 @@
 .main__menu {
   width: 310px;
   border-right: 1px solid #EAEAEA;
+  min-height: 400px;
 }
 .main__profile {
   display: flex;
@@ -40,6 +41,73 @@
 }
 .main__search-wrap {
   padding: 10px 14px;
+}
+.main__right {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+}
+.main__user {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+  border-radius: 12px;
+  padding: 15px;
+  font-size: 12px;
+  line-height: 14px;
+  width: 210px;
+}
+.main__user-toggler {
+  background: #F5F5F5;
+  position: relative;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+.main__user-toggler-wrap {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+.main__user-toggler::before, .main__user-toggler::after {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  background: #3369F3;
+  width: 3px;
+  height: 3px;
+}
+.main__user-toggler::before {
+  top: 11px;
+  left: 11px;
+}
+.main__user-toggler::after {
+  top: 5px;
+  left: 11px;
+}
+.main__user-action {
+  position: relative;
+  padding-left: 37px;
+}
+.main__user-action:not(:last-child) {
+  margin-bottom: 24px;
+}
+.main__user-action::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -4px;
+  left: 0;
+  border: 1px solid #3369F3;
+  color: #3369F3;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+}
+.main__user-action--add::before {
+  content: "+";
+}
+.main__user-action--delete::before {
+  content: "x";
 }
 .main__dialogs {
   display: flex;
@@ -88,6 +156,8 @@
   line-height: 12px;
   color: #999999;
   border-top: 1px solid #EAEAEA;
+  position: absolute;
+  bottom: 0;
 }
 .main__window-input {
   background: #EFEFEF;

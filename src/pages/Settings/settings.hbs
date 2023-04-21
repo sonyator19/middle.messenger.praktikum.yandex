@@ -1,19 +1,29 @@
-<form class="form-simple">
-  <div>
-    <h3 class="form-simple__title">{{title}}</h3>
-    <div class="form-simple__wrap">
-        {{{login}}}
-        {{{password}}}
-        {{{email}}}
-        {{{first_name}}}
-        {{{second_name}}}
-        {{{phone}}}
-        {{{password}}}
-        {{{password_add}}}
+<div>
+
+<div class="user">
+  <div class="user__header">
+    <div class="user__header-img"></div>
+    <div class="user__header-name">{{display_name}}</div>
+  </div>
+
+  <div class="user__fields">
+    {{#if default}}
+      {{{changeDataTemplte}}}
+    {{/if}}
+    {{#if passwordChange}}
+      {{{changePasswordTemplte}}}
+    {{/if}}
+    {{#if passwordChange}}
+      {{{changeDataTemplte}}}
+    {{/if}}
+  </div>
+
+  {{#if default}}
+    <div class="user__btns">
+      {{{changeDataBtn}}}
+      {{{changePasswordBtn}}}
+      {{{logOutBtn}}}
     </div>
-  </div>
-  <div class="form-simple__btns">
-      <button type="submit" class="form-simple__btn">{{btn}}</button>
-      {{{link}}}
-  </div>
-</form>
+  {{/if}}
+
+</div>

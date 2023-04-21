@@ -31,7 +31,7 @@
   content: "Поменять аватар";
   max-width: 65px;
   text-align: center;
-  color: #FFF;
+  color: white;
   font-size: 13px;
   line-height: 14px;
   z-index: 10;
@@ -59,10 +59,6 @@
 .user__row-content {
   color: #999999;
 }
-.user__row-content--input {
-  text-align: right;
-  border: none;
-}
 .user__btns {
   font-size: 13px;
   line-height: 13px;
@@ -70,6 +66,7 @@
   flex-direction: column;
 }
 .user__btns button {
+  background: none;
   text-align: left;
   padding: 10px 0;
 }

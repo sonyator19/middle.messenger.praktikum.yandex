@@ -1,4 +1,4 @@
-import { store } from "../utils/Store";
+import store from "../utils/Store";
 import UserAPI from "../api/UserAPI";
 import { PasswordData, UserData } from "../api/ChatsAPI";
 

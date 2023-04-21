@@ -16,8 +16,21 @@
         </div>
         {{{dialogList}}}
     </div>
-    <div class="main__window">
-        {{!-- <div>Выберите чат чтобы отправить сообщение</div> --}}
-        <input class="main__window-input" type="text" name="message" placeholder="Сообщение">
+    <div class="main__right">
+        <div class="user-click">
+            <div class="main__user-toggler-wrap" data-toggle="user">
+                <div class="main__user-toggler"></div>
+            </div>
+
+            <div class="main__user" data-modal="user-modal">
+                <div class="main__user-action main__user-action--add">Добавить пользователя</div>
+                <div class="main__user-action main__user-action--delete">Удалить пользователя</div>
+            </div>
+        </div>
+
+        <div class="main__window">
+            {{!-- <div>Выберите чат чтобы отправить сообщение</div> --}}
+            <input class="main__window-input" type="text" name="message" placeholder="Сообщение">
+        </div>
     </div>
 </div>

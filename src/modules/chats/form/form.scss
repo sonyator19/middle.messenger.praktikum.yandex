@@ -22,31 +22,6 @@
     &__label {
         font-size: 9px;
         line-height: 9px;
-<<<<<<< HEAD
-        color: $c-color;
-    }
-
-    &__input {
-        color: $c-dark;
-        font-size: 13px;
-        line-height: 13px;
-        border: none;
-        border-bottom: 1px solid $c-brand;
-        padding: 7px 0;
-        width: 100%;
-        margin-bottom: 20px;
-
-        &-wrap {
-            position: relative;
-        }
-    }
-
-    &__error {
-        font-size: 12px;
-        color: red;
-        position: absolute;
-        bottom: 4px;
-=======
         color: #999999;
     }
 
@@ -66,10 +41,16 @@
                 margin-bottom: 16px;
             }
         }
->>>>>>> a7027fb (fix files)
     }
 
     &__wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 400px;
+    }
+
+    &__fields {
         margin-bottom: 62px;
     }
 
@@ -82,13 +63,8 @@
     &__btn {
         border: none;
         border-radius: 8px;
-<<<<<<< HEAD
-        background: $c-brand;
-        color: $c-white;
-=======
         background: #3369F3;
         color: white;
->>>>>>> a7027fb (fix files)
         padding: 12px 70px;
     }
 
@@ -97,18 +73,39 @@
         font-weight: 500;
         font-size: 11px;
         line-height: 11px;
-<<<<<<< HEAD
-        color: $c-brand;
-=======
         color: #3369F3;
->>>>>>> a7027fb (fix files)
     }
 }
 
 input::placeholder {
-<<<<<<< HEAD
-    color: $c-dark;
-=======
     color: #1E1E1E;
->>>>>>> a7027fb (fix files)
+}
+
+.form-settings {
+    &__label {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 13px;
+    }
+
+    &__input {
+        display: flex;
+        justify-content: space-between;
+
+        input {
+            border: none;
+            outline: none;
+            padding: 0;
+            margin: 0;
+            text-align: end;
+        }
+
+        &-wrap {
+            &:not(:last-child) {
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+                border-bottom: 1px solid $c-border;
+            }
+        }
+    }
 }

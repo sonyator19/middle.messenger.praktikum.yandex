@@ -1,60 +1,31 @@
 import Block from "../../utils/Block";
-import { InputChecked } from "../../components/inputChecked";
 import { Link } from "../../components/link";
 import signup from './signup.hbs';
+import { SignUpForm } from "./signUpForm";
+import AuthController from "../../controllers/AuthController";
 
 export class SignUpPage extends Block {
     constructor() {
         super();
     }
 
-    init() {   
-        this.children.email = new InputChecked({
-            name: 'email',
-            label: 'Почта',
-            type: 'email',
-        });
-    
-        this.children.login = new InputChecked({
-            name: 'login',
-            label: 'Логин',
-            type: 'text',
-        });
-    
-        this.children.first_name = new InputChecked({
-            name: 'first_name',
-            label: 'Имя',
-            type: 'text',
-        });
-    
-        this.children.second_name = new InputChecked({
-            name: 'second_name',
-            label: 'Фамилия',
-            type: 'text',
-        });
-    
-        this.children.phone = new InputChecked({
-            name: 'phone',
-            label: 'Телефон',
-            type: 'tel',
-        });
-    
-        this.children.password = new InputChecked({
-            name: 'password',
-            label: 'Пароль',
-            type: 'text',
-        });
-    
-        this.children.password_add = new InputChecked({
-            name: 'password',
-            label: 'Пароль (ещё раз)',
-            type: 'text',
+    init() {  
+        this.children.signUpForm = new SignUpForm({
+            events: {
+                submit: (e: Event): void => this.onSubmit(e),
+            },
         });
 
         this.children.link = new Link({
             to: '/',
             label: 'Войти',
         });
+    }
+
+    onSubmit(e: Event): void {
+        e.preventDefault();
+        const data: any  = Object.fromEntries(new FormData(e.target).entries());
+        AuthController.signup(data);
     }
 
     render() {

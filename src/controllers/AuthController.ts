@@ -1,16 +1,15 @@
-// import AuthAPI from "../api/AuthAPI";
 import { AuthAPI } from "../api/AuthAPI";
 import store from "../utils/Store";
 import Router from "../utils/Router";
 import MessagesController from "./MessagesController";
 
 export interface SignupData {
+  "email": string,
+  "login": string,
   "first_name": string,
   "second_name": string,
-  "login": string,
-  "email": string,
-  "password": string,
-  "phone": string
+  "phone": string,
+  "password": string
 }
 
 export interface SigninData {
@@ -21,24 +20,22 @@ export interface SigninData {
 class AuthController {
   private api = new AuthAPI();
 
-  async signup(signupData: SignupData) {
-    try {
-      await this.api.signup(signupData);
-      await this.fetchUser();
-      Router.go("/messenger");
-    } catch (e) {
-      console.error("signup:", e);
-    }
+  signup(data: SignupData) {
+    this.api.signup(data)
+      .then(() => {
+        Router.go('/profile');
+      })
+      .catch(console.log);
   }
 
-  async signin(signinData: SigninData) {
+  async signin(data: SigninData) {
     try {
-      await this.api.signin(signinData);
+      await this.api.signin(data);
       await this.fetchUser();
       Router.go("/messenger");
-    } catch (e) {
-      console.error("signin:", e);
-      Router.go("/");
+    } catch (error) {
+      console.error("signin:", error);
+      // store.set('user.hasError', true);
     }
   }
 

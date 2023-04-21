@@ -10,6 +10,7 @@
     &__menu {
         width: 310px;
         border-right: 1px solid $c-border;
+        min-height: 400px;
     }
 
     &__profile {
@@ -46,6 +47,90 @@
 
         &-wrap {
             padding: 10px 14px;
+        }
+    }
+
+    &__right {
+        position: relative;
+        width: 100%;
+        min-height: 400px;
+    }
+
+    &__user {
+        box-shadow: $b-sh;
+        border-radius: 12px;
+        padding: 15px;
+        font-size: 12px;
+        line-height: 14px;
+        width: 210px;
+
+        &-toggler {
+            background: #F5F5F5;
+            position: relative;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+
+            &-wrap {
+                position: absolute;
+                top: 15px;
+                right: 20px;
+            }
+
+            &::before,
+            &::after {
+                position: absolute;
+                content: '';
+                border-radius: 50%;
+                background: $c-brand;
+                width: 3px;
+                height: 3px;
+            }
+
+            &::before {
+                top: 11px;
+                left: 11px;
+            }
+
+            &::after {
+                top: 5px;
+                left: 11px;
+            }
+        }
+
+        &-action {
+            position: relative;
+            padding-left: 37px;
+
+            &:not(:last-child) {
+                margin-bottom: 24px;
+            }
+
+            &::before {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: -4px;
+                left: 0;
+                border: 1px solid $c-brand;
+                color: $c-brand;
+                border-radius: 50%;
+                width: 22px;
+                height: 22px;
+            }
+
+            &--add {
+                &::before {
+                    content: '+';
+                }
+            }
+
+            &--delete {
+                &::before {
+                    content: 'x';
+                }
+            }
         }
     }
 
@@ -103,6 +188,8 @@
         line-height: 12px;
         color: $c-color;
         border-top: 1px solid $c-border;
+        position: absolute;
+        bottom: 0;
 
         &-input {
             background: $c-background;

@@ -1,10 +1,8 @@
 import Block from "../../utils/Block";
 import login from './login.hbs';
 import { Link } from "../../components/link";
-import Router from "../../utils/Router";
 import AuthController from "../../controllers/AuthController";
 import { LoginForm } from "./loginForm";
-import { Input } from "../../components/input";
 
 export class LoginPage extends Block {
     constructor() {
@@ -14,10 +12,10 @@ export class LoginPage extends Block {
     init() {
         this.children.loginForm = new LoginForm({
             events: {
-                submit: (e: {
-                    preventDefault: () => void;
-                    target: HTMLFormElement | undefined;
-                }): void => this.onSubmit(e),
+              submit: (e: {
+                preventDefault: () => void;
+                target: HTMLFormElement | null | undefined;
+              }): void => this.onSubmit(e),
             },
         });
 
@@ -28,15 +26,11 @@ export class LoginPage extends Block {
     }
 
     onSubmit(e: Event): void {
-        const values = Object.values(this.children)
-        .filter(child => child instanceof Input)
-        .map((child) => ([(child as Input).getName(), (child as Input).getValue()]))
-  
-        const data = Object.fromEntries(values);
-        console.log(data);
-    
+        e.preventDefault();
+        const data: any = Object.fromEntries(
+            new FormData(e.target).entries()
+        );
         AuthController.signin(data);
-        Router.go("/messenger");
     }
 
     render() {

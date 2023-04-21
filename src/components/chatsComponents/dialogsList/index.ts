@@ -2,7 +2,6 @@ import store, { withStore } from "../../../utils/Store";
 import Block from "../../../utils/Block";
 import template from "./dialogsList.hbs";
 import { Dialogue } from "../dialogue";
-// import ChatsController from "../../../controllers/ChatsController";
 
 interface DialogMiniInterface {
   avatar: null;
@@ -15,7 +14,7 @@ interface DialogMiniInterface {
 
 interface DialogListProps {
   openModal?: boolean;
-  dialogs: DialogMiniInterface[];
+  chats: DialogMiniInterface[];
 }
 
 class DialogListBase extends Block<DialogListProps> {
@@ -23,8 +22,12 @@ class DialogListBase extends Block<DialogListProps> {
     super(props);
   }
 
+  protected init(): void {
+    this.children.chats = this.createChats(this.props);
+  }
+
   private createChats(props: DialogListProps) {
-    if (!props.dialogs || props.dialogs.length == 0) {
+    if (!props.chats || props.chats.length == 0) {
       const info = {
         avatar: null,
         created_by: 0,
@@ -44,8 +47,7 @@ class DialogListBase extends Block<DialogListProps> {
       });
     }
 
-    return props.dialogs.map((data) => {
-
+    return props.chats.map((data) => {
       return new Dialogue({
         ...data,
         events: {
@@ -62,23 +64,14 @@ class DialogListBase extends Block<DialogListProps> {
     store.set("activeChatID", +currentDialogID);
   }
 
-  // addChats() {
-  //   this.children.modal.setProps({ class: "" });
-  // }
-
   protected componentDidUpdate(
-    oldProps: DialogListProps,
     newProps: DialogListProps
   ): boolean {
-    // this.children.modal.setProps({
-    //   openModal: newProps.openModal,
-    // });
-
-    this.children.dialogs = this.createChats(newProps);
+    this.children.chats = this.createChats(newProps);
 
     return true;
   }
-
+  
   render() {
     return this.compile(template, { ...this.props });
   }
